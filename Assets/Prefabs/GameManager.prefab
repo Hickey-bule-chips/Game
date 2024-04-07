@@ -1,0 +1,105 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2092063352538048766
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2092063352538048760}
+  - component: {fileID: 2092063352538048767}
+  - component: {fileID: 2092063352538048761}
+  - component: {fileID: 2092063352538048762}
+  - component: {fileID: 2092063352538048763}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2092063352538048760
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2092063352538048766}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 120.94523, y: 190.20833, z: -1.7756137}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2092063352538048767
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2092063352538048766}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 063c90c4a409160428b9c6ad641f9fda, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  optimalCommandList:
+  - Forward
+  - Loop
+  currentCommandIndex: 0
+  isPlay: 0
+  isPause: 0
+  isStop: 0
+  isLoop: 0
+--- !u!114 &2092063352538048761
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2092063352538048766}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b16e402a63fbde64bbaf3a8d817b6d5c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  forwardCommandBtn: 1
+  backCommandBtn: 1
+  jumpCommandBtn: 0
+  loopCommandBtn: 1
+  attackCommandBtn: 0
+  pickCommandBtn: 0
+--- !u!114 &2092063352538048762
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2092063352538048766}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac0187c8f36cbe6429a237b4ac271dfd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isWin: 0
+  commandQueue: {fileID: 0}
+  scoreCondition: {fileID: 0}
+--- !u!114 &2092063352538048763
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2092063352538048766}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a9610fd939128c4eb381326c24e0a40, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bestCommandAmount: 2
+  maxScore: 20
+  minScore: 10
